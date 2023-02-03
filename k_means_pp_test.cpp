@@ -49,6 +49,7 @@ public:
 		
 		cv::imshow( "dataset", image_ );
 		cv::waitKey(0);
+		cv::imwrite("befor.jpg", image_);
 	}
 
 	void drawCentroids( const std::vector<KMeansDataType>& centroids )
@@ -62,6 +63,7 @@ public:
 
                 cv::imshow( "dataset", image_ );
                 cv::waitKey(0);
+		cv::imwrite("after.jpg", image_);
 
 	}
 
